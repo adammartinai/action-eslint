@@ -2,6 +2,10 @@ name: 'Run eslint with reviewdog'
 description: '🐶 Run eslint with reviewdog on pull requests to improve code review experience.'
 author: 'haya14busa (reviewdog)'
 inputs:
+  mono_repo_dir:
+    description: 'Mono Repo Dir'
+    required: false
+    default: '.'
   github_token:
     description: 'GITHUB_TOKEN.'
     required: true

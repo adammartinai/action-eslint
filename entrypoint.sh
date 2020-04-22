@@ -2,6 +2,8 @@
 
 cd "$GITHUB_WORKSPACE"
 
+cd "$INPUT_MONO_REPO_DIR"
+
 export REVIEWDOG_GITHUB_API_TOKEN="${INPUT_GITHUB_TOKEN}"
 
 if [ ! -f "$(npm bin)/eslint" ]; then
